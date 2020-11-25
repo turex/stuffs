@@ -1,0 +1,14 @@
+keep a local directory update and apply patches if needed
+
+git pull
+
+for keep update
+
+
+git diff > patch.patch
+
+make patch and type this
+
+git apply patch.patch
+
+to apply
