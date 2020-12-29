@@ -1,0 +1,3 @@
+windows powershell:
+
+search words on files ->  Select-String "bluetooth" *.kt > log.txt 
