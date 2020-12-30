@@ -1,0 +1,14 @@
+git clone https://github.com/turex/android_kernel_huawei_hi6250.git -b upstreaming/lineage-16.0
+
+git remote add linux-stable https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git && git fetch linux-stable
+
+git checkout -b upstreaming/lineage-16.0 //non piu necessario, serve a switchare ed creare una nuova branch
+git merge vtag --allow-unrelated-histories
+git commit
+git push --set-upstream origin upstreaming/lineage-16.0 // solo la prima volta, poi git push
+
+
+per risolvere commit non risolvibili:
+git revert idpatch
+git add file
+
